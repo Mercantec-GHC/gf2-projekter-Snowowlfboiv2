@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.CompilerServices;
+using System.Threading.Channels;
 
 namespace Opgaver
 {
@@ -27,7 +29,13 @@ namespace Opgaver
             Console.WriteLine("Opgave 1:");
             Console.WriteLine("Brug et loop til at udskrive tallene fra 1 til 10.");
             // Lav opgaven herunder!
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine("i= " + i);
+            }
         }
+
+        
 
         public static void Loop2()
         {
@@ -41,6 +49,15 @@ namespace Opgaver
             Console.WriteLine("Opgave 3:");
             Console.WriteLine("Brug et loop til at lægge alle tal fra 1 til 100 sammen og udskriv resultatet.");
             // Lav opgaven herunder!
+
+            int sum = 0;
+
+            for (int i = 1; i <= 101; i++)
+            {
+                sum += i;
+            }
+
+            Console.WriteLine($"summen af alle talene er {sum}");
         }
 
         public static void Loop4()
