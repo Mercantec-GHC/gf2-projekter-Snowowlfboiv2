@@ -42,6 +42,7 @@ namespace Opgaver
             Console.WriteLine("Opgave 2:");
             Console.WriteLine("Brug et loop og en if-betingelse til at udskrive alle lige tal fra 2 til 20.");
             // Lav opgaven herunder!
+
         }
 
         public static void Loop3()

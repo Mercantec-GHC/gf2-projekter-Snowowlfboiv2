@@ -32,7 +32,7 @@ namespace Hjemmet
                 }
                 else if (userGuess > number) 
                 {
-                    Console.WriteLine("For Højt! Præv et lavere tal.");
+                    Console.WriteLine("For Højt! Prøv et lavere tal.");
                 }
                 else
                 {
