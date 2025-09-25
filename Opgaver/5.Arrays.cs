@@ -35,6 +35,15 @@ namespace Opgaver
             );
             // Lav opgaven herunder!
             string[] navne = new string[5];
+            navne[0] = Console.ReadLine();
+            navne[1] = Console.ReadLine();
+            navne[2] = Console.ReadLine();
+            navne[3] = Console.ReadLine();
+            navne[4] = Console.ReadLine();
+            Console.WriteLine();   
+            Console.WriteLine(string.Join(", ", navne));
+         
+
         }
 
         public static void Array2()
@@ -44,6 +53,24 @@ namespace Opgaver
                 "Lav et program som gemmer 5 tal i et array og udskriver det største tal."
             );
             // Lav opgaven herunder!
+            int[] numbers = new int[5];
+
+            numbers[0] = int.Parse(Console.ReadLine());
+            numbers[1] = int.Parse(Console.ReadLine());
+            numbers[2] = int.Parse(Console.ReadLine());
+            numbers[3] = int.Parse(Console.ReadLine());
+            numbers[4] = int.Parse(Console.ReadLine());
+
+            int max = numbers[0];
+            
+            foreach(int t in numbers)
+            {
+                if (t > max)
+                {
+                    max = t;
+                }
+            }
+            Console.WriteLine($"Det største tal er: {max}");
         }
 
         public static void Array3()
