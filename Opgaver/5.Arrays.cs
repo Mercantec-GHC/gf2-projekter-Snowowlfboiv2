@@ -35,14 +35,16 @@ namespace Opgaver
             );
             // Lav opgaven herunder!
             string[] navne = new string[5];
-            navne[0] = Console.ReadLine();
-            navne[1] = Console.ReadLine();
-            navne[2] = Console.ReadLine();
-            navne[3] = Console.ReadLine();
-            navne[4] = Console.ReadLine();
-            Console.WriteLine();   
-            Console.WriteLine(string.Join(", ", navne));
-         
+
+            for ( int i = 0; i < navne.Length; i++ )
+            {
+                Console.WriteLine("indtast dit navn: ");
+                navne[i] = Console.ReadLine();
+            }
+            foreach (string navn in navne)
+            {
+                Console.WriteLine(navne);
+            }
 
         }
 
@@ -54,15 +56,28 @@ namespace Opgaver
             );
             // Lav opgaven herunder!
             int[] numbers = new int[5];
-
-            numbers[0] = int.Parse(Console.ReadLine());
-            numbers[1] = int.Parse(Console.ReadLine());
-            numbers[2] = int.Parse(Console.ReadLine());
-            numbers[3] = int.Parse(Console.ReadLine());
-            numbers[4] = int.Parse(Console.ReadLine());
-
             int max = numbers[0];
-            
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine("indtast dit tal: ");
+                string input = Console.ReadLine();
+
+
+                while (true)
+                {
+                    if (int.TryParse(input, out int value))
+                    {
+                        numbers[i] = value;
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Du lavede en fejl prøv igen");
+                    }
+                }
+            }
+          
             foreach(int t in numbers)
             {
                 if (t > max)
@@ -81,6 +96,9 @@ namespace Opgaver
                 og udskriver dem alle i omvendt rækkefølge."
             );
             // Lav opgaven herunder!
+
+            string[] bynavne = new string[5];
+
         }
 
         public static void List1()
