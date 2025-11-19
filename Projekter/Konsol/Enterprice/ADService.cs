@@ -14,7 +14,7 @@ namespace Enterprice
             try
             {
                 Console.WriteLine("Define Credentials");
-                var credential = new NetworkCredential("{_username}@{_domain}", _password);
+                var credential = new NetworkCredential($"{_username}@{_domain}", _password);
                 Console.WriteLine($"Credentials defined: {credential.UserName}");
                 Console.WriteLine("Creating Connection");
                 var connection = new LdapConnection(_server)
